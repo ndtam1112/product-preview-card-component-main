@@ -120,3 +120,8 @@ body {
   line-height: 150%;
   letter-spacing: 0px;
 }
+
+#html-css-foundations:hover {
+    color: var(--color-primary);
+    cursor: pointer;
+}
