@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+  font-family: 'Figtree ExtraBold';
+  src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Figtree Medium';
+  src: url('./assets/fonts/static/Figtree-Medium.ttf') format('truetype');
+}
+
+:root {
+    --color-primary: #f4d04e;
+    --color-secondary: #111111;
+    --color-tertiary: #6b6b6b;
+
+    --spacing-300: 24px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    padding: var(--spacing-300);
+    border: #111111 1px solid;
+    box-shadow: 8px 8px 0 #000000
+}
+
+.card-image {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-150);
+}
+.badge {
+    background-color: var(--color-primary);
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-family: 'Figtree ExtraBold', sans-serif;
+    font-size: 14px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.color-tertiary {
+    color: var(--color-tertiary);
+}
+
+.text-preset-1 {
+  font-family: 'Figtree ExtraBold', sans-serif;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2 {
+  font-family: 'Figtree Medium', sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+    color: var(--color-tertiary);
+
+}
+
+.text-preset-3 {
+  font-family: 'Figtree Medium', sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3-bold {
+  font-family: 'Figtree ExtraBold', sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
