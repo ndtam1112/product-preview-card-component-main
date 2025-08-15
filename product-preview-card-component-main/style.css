@@ -1,0 +1,124 @@
+:root {
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 40%;
+    height: fit-content;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.row-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 0 0 20px;
+}
+
+.content {
+    width: 50%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1,p {
+    margin: 0;
+    padding: 0
+}
+
+.label {
+    letter-spacing: 2px;
+    color: var(--grey);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--black);
+}
+
+.sub {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey);
+}
+
+.price {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 40px;
+    color: var(--green-500);
+    font-weight: 700;
+}
+
+.dis-price {
+    font-size: 18px;
+    color: var(--grey);
+    text-decoration: line-through;
+    margin-left: 32px;
+}
+
+.btn {
+    background-color: var(--green-500);
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: row;
+    color: var(--white);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(./images/icon-cart.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
